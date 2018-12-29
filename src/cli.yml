@@ -2,6 +2,10 @@ name: AdventOfCode
 version: "1"
 author: Sebastian Schmidt <isibboi@gmail.com>
 about: Solve AdventOfCode problems
-subcommands:
-  - day1
-  - day2
+args:
+  - all:
+      short: a
+      long: all
+  - day1:
+      short: "1"
+      long: day1
