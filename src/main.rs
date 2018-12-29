@@ -32,6 +32,11 @@ fn main() {
         has_arg = true;
     }
 
+    if matches.is_present("day1_2") ||matches.is_present("all") {
+        day1::day1_2();
+        has_arg = true;
+    }
+
     if !has_arg {
         warn!("No argument given");
     }
