@@ -1,7 +1,7 @@
 use crate::io::load_input;
 
-pub fn day1() {
-    let input = load_input("day1");
+pub fn day1_1() {
+    let input = load_input("day1_1");
     let mut sum = 0;
 
     for line in input {
@@ -9,5 +9,5 @@ pub fn day1() {
         sum += n;
     }
 
-    info!("Result of day1: {}", sum);
+    info!("Result of day1_1: {}", sum);
 }

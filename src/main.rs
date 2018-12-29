@@ -27,8 +27,8 @@ fn main() {
 
     let mut has_arg = false;
 
-    if matches.is_present("day1") ||matches.is_present("all") {
-        day1::day1();
+    if matches.is_present("day1_1") ||matches.is_present("all") {
+        day1::day1_1();
         has_arg = true;
     }
 
