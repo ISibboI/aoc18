@@ -5,6 +5,7 @@ extern crate log;
 extern crate simplelog;
 
 mod day1;
+mod day2;
 mod io;
 
 use clap::App;
@@ -34,6 +35,16 @@ fn main() {
 
     if matches.is_present("day1_2") ||matches.is_present("all") {
         day1::day1_2();
+        has_arg = true;
+    }
+
+    if matches.is_present("day2_1") ||matches.is_present("all") {
+        day2::day2_1();
+        has_arg = true;
+    }
+
+    if matches.is_present("day2_2") ||matches.is_present("all") {
+        day2::day2_2();
         has_arg = true;
     }
 

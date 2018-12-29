@@ -2,7 +2,7 @@ use crate::io::load_input;
 use std::collections::HashSet;
 
 pub fn day1_1() {
-    let input = load_input("day1_1");
+    let input = load_input("day1");
     let mut sum = 0;
 
     for line in input {
@@ -14,12 +14,12 @@ pub fn day1_1() {
 }
 
 pub fn day1_2() {
-    let input = load_input("day1_2");
+    let input = load_input("day1");
     let mut sum = 0;
     let mut reached_sums = HashSet::new();
     reached_sums.insert(sum);
 
-    for line in input {
+    for line in input.iter().cycle() {
         let n: i32 = line.parse().unwrap();
         sum += n;
 
